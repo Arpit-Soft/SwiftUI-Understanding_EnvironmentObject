@@ -8,8 +8,18 @@
 import SwiftUI
 
 struct FancyScoreView: View {
+    @EnvironmentObject var userSettings: UserSettings
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("\(userSettings.score)")
+                .font(.title)
+            Button("Fancy Score") {
+                userSettings.score += 1
+            }
+            .padding()
+        }
+        .padding()
+        .background(Color.red)
     }
 }
 

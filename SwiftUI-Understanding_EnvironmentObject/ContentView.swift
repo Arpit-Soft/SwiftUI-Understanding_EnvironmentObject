@@ -8,14 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var userSettings: UserSettings
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Text("\(userSettings.score)")
+                .padding()
+                .font(.largeTitle)
+            Button("Change Score") {
+                userSettings.score += 1
+            }
+            .padding(10)
+            .font(.headline)
+            .foregroundColor(.white)
+            .background(Color.blue)
+            FancyScoreView()
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environmentObject(UserSettings())
     }
 }

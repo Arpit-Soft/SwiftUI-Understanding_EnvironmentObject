@@ -13,6 +13,8 @@
 		2D35AFE92683A30800DDC385 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D35AFE82683A30800DDC385 /* Preview Assets.xcassets */; };
 		2D35AFF42683A30800DDC385 /* SwiftUI_Understanding_EnvironmentObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D35AFF32683A30800DDC385 /* SwiftUI_Understanding_EnvironmentObjectTests.swift */; };
 		2D35AFFF2683A30900DDC385 /* SwiftUI_Understanding_EnvironmentObjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D35AFFE2683A30900DDC385 /* SwiftUI_Understanding_EnvironmentObjectUITests.swift */; };
+		2D35B0112683A36C00DDC385 /* FancyScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D35B0102683A36C00DDC385 /* FancyScoreView.swift */; };
+		2D35B01A2683A3CF00DDC385 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D35B0192683A3CF00DDC385 /* UserSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		2D35AFFA2683A30900DDC385 /* SwiftUI-Understanding_EnvironmentObjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-Understanding_EnvironmentObjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D35AFFE2683A30900DDC385 /* SwiftUI_Understanding_EnvironmentObjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Understanding_EnvironmentObjectUITests.swift; sourceTree = "<group>"; };
 		2D35B0002683A30900DDC385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D35B0102683A36C00DDC385 /* FancyScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyScoreView.swift; sourceTree = "<group>"; };
+		2D35B0192683A3CF00DDC385 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,8 @@
 		2D35AFE02683A30300DDC385 /* SwiftUI-Understanding_EnvironmentObject */ = {
 			isa = PBXGroup;
 			children = (
+				2D35B0182683A3B600DDC385 /* Classes */,
+				2D35B00F2683A34D00DDC385 /* Views */,
 				2D35AFE12683A30300DDC385 /* SwiftUI_Understanding_EnvironmentObjectApp.swift */,
 				2D35AFE32683A30300DDC385 /* ContentView.swift */,
 				2D35AFE52683A30800DDC385 /* Assets.xcassets */,
@@ -128,6 +134,22 @@
 				2D35B0002683A30900DDC385 /* Info.plist */,
 			);
 			path = "SwiftUI-Understanding_EnvironmentObjectUITests";
+			sourceTree = "<group>";
+		};
+		2D35B00F2683A34D00DDC385 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2D35B0102683A36C00DDC385 /* FancyScoreView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2D35B0182683A3B600DDC385 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2D35B0192683A3CF00DDC385 /* UserSettings.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +281,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D35B0112683A36C00DDC385 /* FancyScoreView.swift in Sources */,
+				2D35B01A2683A3CF00DDC385 /* UserSettings.swift in Sources */,
 				2D35AFE42683A30300DDC385 /* ContentView.swift in Sources */,
 				2D35AFE22683A30300DDC385 /* SwiftUI_Understanding_EnvironmentObjectApp.swift in Sources */,
 			);
